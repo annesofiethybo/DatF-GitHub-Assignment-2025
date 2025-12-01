@@ -7,7 +7,7 @@
 <h1>List of students who have created a pull request:</h1>
 <ul id="students-list"></ul>
 <script>
-fetch('../src/students.txt')
+fetch('https://raw.githubusercontent.com/JakobSchauser/DatF-GitHub-Assignment-2025/refs/heads/main/src/students.txt')
 .then(response => response.text())
 .then(text => {
 const names = text.split('\n').filter(name => name.trim());
